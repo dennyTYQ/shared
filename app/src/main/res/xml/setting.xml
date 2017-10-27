@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceCategory android:title="分类1">
+    <SwitchPreference
+        android:key="wifi"
+        android:summaryOff="禁用"
+        android:summaryOn="启用"
+        android:title="WIFI"></SwitchPreference>
+    <CheckBoxPreference
+        android:key="wifi2"
+        android:summaryOff="禁用"
+        android:summaryOn="启用"
+        android:title="WIFI2"></CheckBoxPreference>
+</PreferenceCategory>
+    <PreferenceCategory
+        android:title="分类二">
+        <ListPreference
+            android:title="数据更新频率"
+            android:key="update_rate"
+            android:entries="@array/update_rate"
+            android:entryValues="@array/update_rate_value"
+            android:summary="默认">
+        </ListPreference>
+        <MultiSelectListPreference
+            android:title="数据更新频率（多选）"
+            android:key="update_rate_muti"
+            android:entries="@array/update_rate"
+            android:entryValues="@array/update_rate_value"
+            android:summary="默认">
+
+        </MultiSelectListPreference>
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="分类三">
+        <EditTextPreference
+            android:dependency="wifi"
+            android:key="wifi_name"
+            android:summary="默认值"
+            android:title="WIFI_Name"
+            ></EditTextPreference>
+        <Preference
+            android:title="关于"
+            android:summary="XXX工作室"
+            ></Preference>
+        <Preference
+            android:title="关于"
+            android:summary="1.0"
+            android:enabled="false"
+            android:selectable="false"></Preference>
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="分类四">
+        <PreferenceScreen
+            android:summary="单位、数据源、其他设置....."
+            android:title="更多设置">
+
+        </PreferenceScreen>
+        <SwitchPreference
+            android:title="其他设置"
+            android:summary=""
+            ></SwitchPreference>
+        <CheckBoxPreference
+            android:title="选项"
+            android:summary=""></CheckBoxPreference>
+    </PreferenceCategory>
+</PreferenceScreen>

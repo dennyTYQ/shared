@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">data_save</string>
+     <string name="app_name2">PreferenceFragment</string>
+    <string-array name="update_rate">
+        <item>一小时</item>
+        <item>三小时</item>
+        <item>六小时</item>
+        <item>半天</item>
+        <item>一天</item>
+    </string-array>
+    <string-array name="update_rate_value">
+        <item>1</item>
+        <item>3</item>
+        <item>6</item>
+        <item>12</item>
+        <item>24</item>
+    </string-array>
+
+</resources>
